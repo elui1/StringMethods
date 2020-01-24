@@ -9,8 +9,14 @@ public class Main {
         int index = input.nextInt();
 
         int length = word.length();
-        System.out.println("The length of " + word + " is: " + index);
-        String slice = word.substring(0, index);
-        System.out.println("The substring from 0 to " + index + " is: " + slice);
+        System.out.println("The length of " + word + " is: " + length);
+
+        if (index > length) {
+            System.out.println("Index is larger than length.");
+        }
+        else {
+            String slice = word.substring(0, index);
+            System.out.println("The substring from 0 to " + index + " is: " + slice);
+        }
     }
 }
